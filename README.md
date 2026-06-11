@@ -1,6 +1,8 @@
 # SIGIR26-StructAlign
 StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrieval [SIGIR 26]
 
+---
+
 ## 👥 Authors
 
 Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianlong Wu<sup>1</sup>, Yupeng Hu<sup>3</sup>, Liqiang Nie<sup>1</sup>
@@ -8,6 +10,8 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 <sup>1</sup> Harbin Institute of Technology (Shenzhen)   <sup>2</sup> Xi'an Jiaotong University  <sup>3</sup> Shandong University
 
 \* Corresponding author
+
+---
 
 ## 🔗 Links
 
@@ -37,17 +41,13 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 ## 📊 Datasets and Protocols
 
 ### 🎬 MSRVTT
-- **Video clips**: 10,000 short videos  
-- **Annotations**: ~20 textual descriptions per video  
-- **Type**: Short video–text paired dataset  
-- **Task**: Video captioning / retrieval
-
+- **Video clips**: 10,000 short videos    
+- **Type**: Short video–text paired dataset
+  
 ---
 
 ### 🎥 ACTNET
-- **Video clips**: ~20,000 long, untrimmed videos  
-- **Categories**: 200 human activity classes  
-- **Source**: Collected from YouTube  
+- **Video clips**: ~20,000 long, untrimmed videos     
 - **Type**: Long-form activity recognition dataset  
 
 ---
