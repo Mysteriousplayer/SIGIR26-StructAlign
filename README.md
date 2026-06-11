@@ -65,7 +65,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ## ⚙️ Evaluation Protocol
 
-We follow the **CTVR protocol** proposed in StableFusion:
+We follow the **CTVR protocol** proposed in [StableFusion](https://github.com/JasonCodeMaker/CTVR):
 
 - All categories are evenly divided into **K tasks**
 - Two settings are used:
@@ -127,8 +127,8 @@ author = {Wang, Shaokun and Guan, Weili and Han, Jizhou and Wu, Jianlong and Hu,
 title = {StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrieval},
 year = {2026},
 booktitle = {Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-pages = {797–806},
-numpages = {10}
+pages = {},
+numpages = {}
 }
 ```
 
@@ -137,4 +137,5 @@ numpages = {10}
 ## 🙏 Acknowledgments
 We thank the following repo providing helpful functions in our work. 
 
+[StableFusion](https://github.com/JasonCodeMaker/CTVR)
 [POLO](https://github.com/Mysteriousplayer/MM23-POLO)
