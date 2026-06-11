@@ -111,6 +111,11 @@ Results will be saved in log/.
 ---
 
 ## 🔍 Limitations
+- **Predefined class number requirement:**  
+  This work constructs the Simplex ETF geometry under the assumption that the total number of classes is known in advance. Although this requirement can be mitigated in practice by setting a sufficiently large upper bound on the number of classes, it may introduce mild redundancy in the representation space and reduce parameter efficiency in some scenarios.
+
+- **Additional training overhead from regularization terms:**  
+  The proposed cross-modal ETF alignment loss and cross-modal relation preserving loss are both regularization-based strategies. While they effectively improve anti-forgetting capability in continual learning, they also introduce a modest increase in training cost. 
 
 ---
 
