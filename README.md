@@ -88,10 +88,33 @@ Install all requirements required to run the code on a Python 3.x by:
 ---
 
 ## 🔄 Data Processing
-All commands should be run under the project root directory. 
 
+### 🎬 MSRVTT Dataset
 ```
-sh data_processing.sh
+# Download MSRVTT data
+wget https://www.robots.ox.ac.uk/~maxbain/frozen-in-time/data/MSRVTT.zip
+unzip MSRVTT.zip -d datasets/MSRVTT
+
+# Place videos in:
+datasets/MSRVTT/MSRVTT_Videos
+
+# Process video frames
+python datasets/utils/process_msrvtt.py
+```
+
+### 🎥 ACTNET
+```
+# Download ActivityNet data from official website
+http://activity-net.org/download.html
+
+# Save it in:
+datasets/ACTNET
+
+# Place videos in:
+datasets/ACTNET/Activity_Videos
+
+# Process video clips
+python datasets/utils/process_actnet.py
 ```
 
 ---
