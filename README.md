@@ -1,7 +1,23 @@
 # SIGIR26-StructAlign
 StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrieval [SIGIR 26]
 
-Paper link: 
+## 👥 Authors
+
+Shaokun Wang<sup>1</sup>, Haoqiang Lin<sup>1*</sup>, Xuemeng Song<sup>1</sup>, Haokun Wen<sup>2,4</sup>, Meng Liu<sup>3</sup>, Yupeng Hu<sup>1</sup>, Xiangyu Zhao<sup>4*</sup>
+
+<sup>1</sup> Harbin Institute of Technology (Shenzhen)  
+<sup>2</sup> Harbin Institute of Technology (Shenzhen)  
+\* Corresponding author
+
+## 🔗 Links
+
+- 📄 **Paper:** [ACM Digital Library](https://...)
+- 💻 **Code Repository:** [GitHub](https://...)
+
+## 📢 Updates
+
+- **[07/2025]** Paper accepted at SIGIR 2025
+- **[04/2026]** Initial open-source release
 
 ## News
 
