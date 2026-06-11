@@ -27,7 +27,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ---
 
-## 📌 Overview (Quick Start / TL;DR)
+## 📌 Overview
 
 - 🎯 Task: Continual Text-to-Video Retrieval (CTVR)
 - ⚙️ Key Idea: Structured cross-modal alignment via ETF geometry
