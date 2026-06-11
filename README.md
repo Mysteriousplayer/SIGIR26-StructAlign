@@ -30,8 +30,8 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 ## 📌 Overview
 
 - 🎯 Task: Continual Text-to-Video Retrieval (CTVR)
-- ⚙️ Key Idea: Structured cross-modal alignment via ETF geometry
-- 🧠 Problem: Intra-modal drift + cross-modal misalignment 
+- 🧠 Problem: Intra-modal drift + cross-modal misalignment
+- ⚙️ Key Idea: Structured cross-modal alignment via ETF geometry 
 - 🚀 Result: Good performance on MSRVTT & ACTNET 
 
 ---
