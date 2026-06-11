@@ -3,30 +3,29 @@ StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrie
 
 ## 👥 Authors
 
-Shaokun Wang<sup>1</sup>, Haoqiang Lin<sup>1*</sup>, Xuemeng Song<sup>1</sup>, Haokun Wen<sup>2,4</sup>, Meng Liu<sup>3</sup>, Yupeng Hu<sup>1</sup>, Xiangyu Zhao<sup>4*</sup>
+Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianlong Wu<sup>1</sup>, Yupeng Hu<sup>3</sup>, Liqiang Nie<sup>1</sup>
 
 <sup>1</sup> Harbin Institute of Technology (Shenzhen)  
-<sup>2</sup> Harbin Institute of Technology (Shenzhen)  
+<sup>2</sup> Xi'an Jiaotong University
+<sup>3</sup> Shandong University
 \* Corresponding author
 
 ## 🔗 Links
 
 - 📄 **Paper:** [ACM Digital Library](https://...)
-- 💻 **Code Repository:** [GitHub](https://...)
+- 💻 **Code Repository:** [GitHub](https://github.com/Mysteriousplayer/SIGIR26-StructAlign)
 
 ## 📢 Updates
 
-- **[07/2025]** Paper accepted at SIGIR 2025
-- **[04/2026]** Initial open-source release
+- **[04/2026]** Paper accepted at SIGIR 2026
+- **[07/2026]** Initial open-source release
 
-## News
-
-## Abstract
+## 📖 Abstract
 ![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/fig1.png)
 
 > Continual Text-to-Video Retrieval (CTVR) is a challenging multimodal continual learning setting, where models must incrementally learn new semantic categories while maintaining accurate text–video alignment for previously learned ones, thus making it particularly prone to catastrophic forgetting. A key challenge in CTVR is feature drift, which manifests in two forms: intra-modal feature drift caused by continual learning within each modality, and non-cooperative feature drift across modalities that leads to modality misalignment. To mitigate these issues, we propose StructAlign, a structured cross-modal alignment method for CTVR. First, StructAlign introduces a simplex Equiangular Tight Frame (ETF) geometry as a unified geometric prior to mitigate modality misalignment. Building upon this geometric prior, we design a cross-modal ETF alignment loss that aligns text and video features with category-level ETF prototypes, encouraging the learned representations to form an approximate simplex ETF geometry. In addition, to suppress intra-modal feature drift, we design a Cross-modal Relation Preserving loss, which leverages complementary modalities to preserve cross-modal similarity relations, providing stable relational supervision for feature updates. By jointly addressing non-cooperative feature drift across modalities and intra-modal feature drift, StructAlign effectively alleviates catastrophic forgetting in CTVR. Extensive experiments on benchmark datasets demonstrate that our method shows competitive advantages over state-of-the-art continual retrieval approaches.
 
-## Framework
+## 🏗️ Framework
 
 ![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/fig2.png)
 
@@ -36,34 +35,34 @@ Shaokun Wang<sup>1</sup>, Haoqiang Lin<sup>1*</sup>, Xuemeng Song<sup>1</sup>, H
 
 -Extensive experiments on benchmark datasets demonstrate that StructAlign achieves competitive performance compared to state-of-the-art continual retrieval methods.
 
-## Datasets and Protocols
+## 📊 Datasets and Protocols
 
-## Installation
+## ⚙️ Installation
 Install all requirements required to run the code on a Python 3.x by:
 > First, you need activate a new conda environment.
 > 
 > pip install -r requirements.txt
 
-## Data processing
+## 🔄 Data Processing
 All commands should be run under the project root directory. 
 
 ```
 sh data_processing.sh
 ```
 
-## Training
+## 🏃 Training
 After downloading the datasets you need, you can use this command to obtain training samples used in few-shot and easy-to-hard classification task.
 
 ```
 sh run.sh
 ```
 
-## Results
+## 📈 Results
 Results will be saved in log/.  
 
-## Limitations
+## 🔍 Limitations
 
-## Citation
+## 📝 Citation
 If you found our work useful for your research, please cite our work:
 ```
 @inproceedings{StructAlign,
@@ -76,7 +75,7 @@ numpages = {10}
 }
 ```
 
-## Acknowledgments
+## 🙏 Acknowledgments
 We thank the following repo providing helpful functions in our work. 
 
 DINO: https://github.com/facebookresearch/dino
