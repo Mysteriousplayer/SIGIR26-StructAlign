@@ -132,4 +132,4 @@ numpages = {10}
 ## 🙏 Acknowledgments
 We thank the following repo providing helpful functions in our work. 
 
-DINO: https://github.com/facebookresearch/dino
+[POLO](https://github.com/Mysteriousplayer/MM23-POLO)
