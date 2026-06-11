@@ -36,6 +36,31 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ## 📊 Datasets and Protocols
 
+### 🎬 MSRVTT
+- **Video clips**: 10,000 short videos  
+- **Annotations**: ~20 textual descriptions per video  
+- **Type**: Short video–text paired dataset  
+- **Task**: Video captioning / retrieval
+
+---
+
+### 🎥 ACTNET
+- **Video clips**: ~20,000 long, untrimmed videos  
+- **Categories**: 200 human activity classes  
+- **Source**: Collected from YouTube  
+- **Type**: Long-form activity recognition dataset  
+
+---
+
+## ⚙️ Evaluation Protocol
+
+We follow the **CTVR protocol** proposed in StableFusion:
+
+- All categories are evenly divided into **K tasks**
+- Two settings are used:
+  - **K = 10**
+  - **K = 20**
+
 | Dataset | #Category | Shot/Category | #Task   |
 |---------|-----------|---------------|---------|
 | MSRVTT  | 20        | 16            | K=10,20 |
