@@ -36,6 +36,11 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ## 📊 Datasets and Protocols
 
+| Dataset | #Category | Shot/Category | #Task   |
+|---------|-----------|---------------|---------|
+| MSRVTT  | 20        | 16            | K=10,20 |
+| ACTNET  | 200       | 16            | K=10,20 |
+
 ## ⚙️ Installation
 Install all requirements required to run the code on a Python 3.x by:
 > First, you need activate a new conda environment.
