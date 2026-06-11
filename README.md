@@ -5,9 +5,7 @@ StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrie
 
 Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianlong Wu<sup>1</sup>, Yupeng Hu<sup>3</sup>, Liqiang Nie<sup>1</sup>
 
-<sup>1</sup> Harbin Institute of Technology (Shenzhen)  
-<sup>2</sup> Xi'an Jiaotong University
-<sup>3</sup> Shandong University
+<sup>1</sup> Harbin Institute of Technology (Shenzhen)   <sup>2</sup> Xi'an Jiaotong University  <sup>3</sup> Shandong University
 
 \* Corresponding author
 
