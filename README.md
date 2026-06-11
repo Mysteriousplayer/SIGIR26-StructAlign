@@ -37,7 +37,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 ---
 
 ## 📖 Abstract
-![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/fig1.png)
+![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/concept.png)
 
 > Continual Text-to-Video Retrieval (CTVR) is a challenging multimodal continual learning setting, where models must incrementally learn new semantic categories while maintaining accurate text–video alignment for previously learned ones, thus making it particularly prone to catastrophic forgetting. A key challenge in CTVR is feature drift, which manifests in two forms: intra-modal feature drift caused by continual learning within each modality, and non-cooperative feature drift across modalities that leads to modality misalignment. To mitigate these issues, we propose StructAlign, a structured cross-modal alignment method for CTVR. First, StructAlign introduces a simplex Equiangular Tight Frame (ETF) geometry as a unified geometric prior to mitigate modality misalignment. Building upon this geometric prior, we design a cross-modal ETF alignment loss that aligns text and video features with category-level ETF prototypes, encouraging the learned representations to form an approximate simplex ETF geometry. In addition, to suppress intra-modal feature drift, we design a Cross-modal Relation Preserving loss, which leverages complementary modalities to preserve cross-modal similarity relations, providing stable relational supervision for feature updates. By jointly addressing non-cooperative feature drift across modalities and intra-modal feature drift, StructAlign effectively alleviates catastrophic forgetting in CTVR. Extensive experiments on benchmark datasets demonstrate that our method shows competitive advantages over state-of-the-art continual retrieval approaches.
 
@@ -45,7 +45,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ## 🏗️ Framework
 
-![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/fig2.png)
+![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/framework.png)
 
 -We propose StructAlign, a structured cross-modal alignment framework for CTVR, which explicitly models and mitigates catastrophic forgetting induced by both intra-modal feature drift and non-cooperative feature drift across modalities. 
 
