@@ -27,6 +27,15 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ---
 
+## 📌 Overview (Quick Start / TL;DR)
+
+- 🎯 Task: Continual Text-to-Video Retrieval (CTVR)
+- ⚙️ Key Idea: Structured cross-modal alignment via ETF geometry
+- 🧠 Problem: Intra-modal drift + cross-modal misalignment 
+- 🚀 Result: Good performance on MSRVTT & ACTNET 
+
+---
+
 ## 📖 Abstract
 ![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/fig1.png)
 
@@ -40,9 +49,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 -We propose StructAlign, a structured cross-modal alignment framework for CTVR, which explicitly models and mitigates catastrophic forgetting induced by both intra-modal feature drift and non-cooperative feature drift across modalities. 
 
--We introduce a simplex ETF geometric prior together with a cross-modal ETF alignment loss to enforce a well-separated category-level structure in the shared embedding space. In addition, we design a cross-modal relation preserving loss that leverages cross-modal similarity relations to constrain intra-modal feature updates during continual learning.
-
--Extensive experiments on benchmark datasets demonstrate that StructAlign achieves competitive performance compared to state-of-the-art continual retrieval methods.
+-We introduce a simplex ETF geometric prior together with a cross-modal ETF alignment loss to enforce a well-separated category-level structure in the shared embedding space. In addition, we design a cross-modal relation preserving loss that leverages cross-modal similarity relations to constrain intra-modal feature updates during continual learning. 
 
 ---
 
@@ -51,14 +58,10 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 ### 🎬 MSRVTT
 - **Video clips**: 10,000 short videos    
 - **Type**: Short video–text paired dataset
-  
---
 
 ### 🎥 ACTNET
 - **Video clips**: ~20,000 long, untrimmed videos     
 - **Type**: Long-form activity recognition dataset  
-
---
 
 ## ⚙️ Evaluation Protocol
 
