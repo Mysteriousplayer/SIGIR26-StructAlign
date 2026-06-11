@@ -80,16 +80,18 @@ We follow the **CTVR protocol** proposed in [StableFusion](https://github.com/Ja
 ---
 
 ## ⚙️ Installation
-Install all requirements required to run the code on a Python 3.x by:
-> First, you need activate a new conda environment.
-> 
-> pip install -r requirements.txt
+Install all requirements required to run the code on a Python 3.x.
+
+First, you need activate a new conda environment.
+```
+pip install -r requirements.txt
+```
 
 ---
 
 ## 🔄 Data Processing
 
-### 🎬 MSRVTT Dataset
+### 🎬 MSRVTT 
 ```
 # Download MSRVTT data
 wget https://www.robots.ox.ac.uk/~maxbain/frozen-in-time/data/MSRVTT.zip
