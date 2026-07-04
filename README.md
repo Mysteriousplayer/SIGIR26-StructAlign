@@ -90,14 +90,30 @@ SIGIR26-StructAlign/
 ├── scripts/         # training / evaluation entry scripts
 ├── trainer/         # training framework
 └── README.md
+```
 
 ---
 
 ## ⚙️ Installation
-Install all requirements required to run the code on a Python 3.x.
+Install the required dependencies in a Python environment.
 
-First, you need activate a new conda environment.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Mysteriousplayer/SIGIR26-StructAlign.git
+cd SIGIR26-StructAlign
 ```
+
+### 2. Create and activate a conda environment
+
+```bash
+conda create -n structalign python=3.10 -y
+conda activate structalign
+```
+
+### 3. Install requirements
+
+```bash
 pip install -r requirements.txt
 ```
 
@@ -133,14 +149,53 @@ datasets/ACTNET/Activity_Videos
 python datasets/utils/process_actnet.py
 ```
 
+### Expected directory structure
+
+```text
+SIGIR26-StructAlign/
+├── config/
+├── data/
+├── datasets/
+│   ├── MSRVTT/
+│   └── ACTNET/
+├── model/
+├── scripts/
+└── trainer/
+```
+
 ---
 
 ## 🏃 Training
-After downloading the datasets you need, you can use this command to obtain training samples used in few-shot and easy-to-hard classification task.
+After preparing the datasets, you can launch training with the provided scripts.
 
+### MSRVTT
+
+```bash
+bash scripts/train_framefusionmoe_v2.sh
 ```
-sh run.sh
+
+### ACTNET
+
+```bash
+bash scripts/a_train_framefusionmoe.sh
 ```
+
+---
+
+## Evaluation
+
+Use the corresponding evaluation block in the provided shell scripts, or run evaluation with the saved checkpoints by setting the appropriate config and `eval_path`.
+
+```bash
+python main.py --config <config_path> --eval_path <checkpoint_dir>
+```
+
+---
+
+## Main Configurations
+
+- `config/sa_config.yaml`: main configuration for MSRVTT experiments
+- `config/actnet_sa_config.yaml`: main configuration for ACTNET experiments
 
 ---
 
