@@ -200,7 +200,7 @@ python main.py --config <config_path> --eval_path <checkpoint_dir>
 ---
 
 ## 📈 Results
-Results will be saved in log/.  
+Results and logs will be saved under the specified output directory.   
 
 ---
 
