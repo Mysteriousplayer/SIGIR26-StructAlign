@@ -77,6 +77,20 @@ We follow the **CTVR protocol** proposed in [StableFusion](https://github.com/Ja
 | MSRVTT  | 20        | 16            | K=10,20 |
 | ACTNET  | 200       | 16            | K=10,20 |
 
+## ⚙️ Repository Structure
+
+```text
+SIGIR26-StructAlign/
+├── config/          # training and evaluation configs
+├── data/            # continual split files (.pkl)
+├── datasets/        # dataset loaders and preprocessing utilities
+├── evaluator/       # evaluation logic
+├── model/           # model definitions
+├── modules/         # losses and utilities
+├── scripts/         # training / evaluation entry scripts
+├── trainer/         # training framework
+└── README.md
+
 ---
 
 ## ⚙️ Installation
