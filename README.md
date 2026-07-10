@@ -92,7 +92,7 @@ SIGIR26-StructAlign/
 └── requirements.txt
 ```
 
-> Note: continual split files such as `data/MSRVTT_10_dataset.pkl` and `data/ACTNET_10_dataset.pkl` are required by the training scripts, but are not included in this repository.
+> Note: the `data/` directory is not included in this repository. Continual split files such as `data/MSRVTT_10_dataset.pkl` and `data/ACTNET_10_dataset.pkl` are required by the training scripts, and must be prepared by the user.
 
 ---
 
