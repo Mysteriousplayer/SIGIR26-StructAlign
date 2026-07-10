@@ -82,15 +82,17 @@ We follow the **CTVR protocol** proposed in [StableFusion](https://github.com/Ja
 ```text
 SIGIR26-StructAlign/
 ├── config/          # training and evaluation configs
-├── data/            # continual split files (.pkl)
 ├── datasets/        # dataset loaders and preprocessing utilities
 ├── evaluator/       # evaluation logic
 ├── model/           # model definitions
 ├── modules/         # losses and utilities
 ├── scripts/         # training / evaluation entry scripts
 ├── trainer/         # training framework
-└── README.md
+├── main.py          # training / evaluation launcher
+└── requirements.txt
 ```
+
+> Note: continual split files such as `data/MSRVTT_10_dataset.pkl` and `data/ACTNET_10_dataset.pkl` are required by the training scripts, but are not included in this repository.
 
 ---
 
@@ -121,43 +123,44 @@ pip install -r requirements.txt
 
 ## 🔄 Data Processing
 
-### 🎬 MSRVTT 
+### 🎬 MSRVTT
 ```
 # Download MSRVTT data
 wget https://www.robots.ox.ac.uk/~maxbain/frozen-in-time/data/MSRVTT.zip
 unzip MSRVTT.zip -d datasets/MSRVTT
 
-# Place videos in:
+# Place raw videos in:
 datasets/MSRVTT/MSRVTT_Videos
 
-# Process video frames
+# Extract frame folders used by training
 python datasets/utils/process_msrvtt.py
+
+# Training scripts will read from:
+datasets/MSRVTT/MSRVTT_Frames
 ```
 
 ### 🎥 ACTNET
 ```
-# Download ActivityNet data from official website
+# Download ActivityNet data from the official website
 http://activity-net.org/download.html
 
-# Save it in:
-datasets/ACTNET
-
-# Place videos in:
-datasets/ACTNET/Activity_Videos
-
-# Process video clips
+# Place raw videos under a local ACTNET directory, then process them
 python datasets/utils/process_actnet.py
 ```
+
+The ACTNET training script currently uses an absolute `--videos_dir` path in `scripts/a_train_structalign.sh`. Before running ACTNET experiments, please update that path to your local processed frame directory.
 
 ### Expected directory structure
 
 ```text
 SIGIR26-StructAlign/
 ├── config/
-├── data/
+├── data/                     # required continual split .pkl files (user-prepared)
 ├── datasets/
 │   ├── MSRVTT/
-│   └── ACTNET/
+│   │   ├── MSRVTT_Videos/
+│   │   └── MSRVTT_Frames/
+│   └── ACTNET/              # optional local raw-data placement
 ├── model/
 ├── scripts/
 └── trainer/
@@ -166,25 +169,25 @@ SIGIR26-StructAlign/
 ---
 
 ## 🏃 Training
-After preparing the datasets, you can launch training with the provided scripts.
+After preparing the datasets, you can launch training with the provided scripts. Each script contains separate blocks for the 10-task and 20-task settings, so please comment or uncomment the block you want before running.
 
 ### MSRVTT
 
 ```bash
-bash scripts/train_framefusionmoe_v2.sh
+bash scripts/train_structalign.sh
 ```
 
 ### ACTNET
 
 ```bash
-bash scripts/a_train_framefusionmoe.sh
+bash scripts/a_train_structalign.sh
 ```
 
 ---
 
 ## Evaluation
 
-Use the corresponding evaluation block in the provided shell scripts, or run evaluation with the saved checkpoints by setting the appropriate config and `eval_path`.
+Use the corresponding evaluation block in the provided shell scripts, or run evaluation with the saved checkpoints by setting the appropriate config and `eval_path`. The script files already include example eval commands for both the 10-task and 20-task settings.
 
 ```bash
 python main.py --config <config_path> --eval_path <checkpoint_dir>
