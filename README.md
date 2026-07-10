@@ -47,9 +47,9 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ![image](https://github.com/Mysteriousplayer/SIGIR26-StructAlign/blob/main/framework.png)
 
--We propose StructAlign, a structured cross-modal alignment framework for CTVR, which explicitly models and mitigates catastrophic forgetting induced by both intra-modal feature drift and non-cooperative feature drift across modalities. 
+- We propose StructAlign, a structured cross-modal alignment framework for CTVR, which explicitly models and mitigates catastrophic forgetting induced by both intra-modal feature drift and non-cooperative feature drift across modalities. 
 
--We introduce a simplex ETF geometric prior together with a cross-modal ETF alignment loss to enforce a well-separated category-level structure in the shared embedding space. In addition, we design a cross-modal relation preserving loss that leverages cross-modal similarity relations to constrain intra-modal feature updates during continual learning. 
+- We introduce a simplex ETF geometric prior together with a cross-modal ETF alignment loss to enforce a well-separated category-level structure in the shared embedding space. In addition, we design a cross-modal relation preserving loss that leverages cross-modal similarity relations to constrain intra-modal feature updates during continual learning. 
 
 ---
 
