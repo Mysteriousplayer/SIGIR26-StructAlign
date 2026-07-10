@@ -1,0 +1,12 @@
+nohup.out
+__pycache__/
+*.pyc
+*.pyo
+*.bak_*
+outputs*/
+results/
+data/
+clip-vit-base-patch32/
+datasets/MSRVTT/
+datasets/ACTNET/
+*.svg

@@ -1,0 +1,36 @@
+_base_: "default_config.yaml"
+
+arch: "StructAlign"
+clip_v_lr: 3e-6 #3e-6  3e-5
+clip_t_lr: 3e-6 #3e-6  3e-5
+noclip_lr: 1e-5 #1e-5  1e-5
+num_frames: 12
+batch_size: 32 # 8  32
+project_name: "1-MSRVTT_10_StructAlign"
+dataset_name: "MSRVTT"
+videos_dir: "datasets/MSRVTT/MSRVTT_Frames"
+benchmark: "cap"
+loss: "SCL_and_CRP_v2" #
+grad_acc_steps: 1
+max_num_epochs: 20  
+evals_per_epoch: 1
+
+task_num: 10  
+wf: True
+
+# Inference fusion switch:
+# false -> original word-frame evaluation path
+# true  -> fused word-frame + global similarity evaluation path
+use_fusion_v3: true
+fusion_v3_alpha: 0.5
+
+# Debug option: optional diagnostic logging for SCL_and_CRP_v2 / word-frame validation.
+debug_v2: true
+debug_v2_interval: 20
+debug_v2_verbose: false
+
+# Implementation note: stop a task early when monitored R@1 has no improvement.
+early_stop: true
+early_stop_patience: 5
+early_stop_warmup_epochs: 10
+early_stop_min_delta: 0.0

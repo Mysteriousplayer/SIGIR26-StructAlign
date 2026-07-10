@@ -1,0 +1,21 @@
+_base_: "default_config.yaml"
+
+# FrameFusionMoE integration note: this is a parallel arch config and does not modify StructAlign experiments.
+arch: "FrameFusionMoE"
+clip_v_lr: 3e-6
+clip_t_lr: 3e-6
+noclip_lr: 1e-5
+num_frames: 12
+batch_size: 32
+project_name: "1-MSRVTT_10_FrameFusionMoE"
+dataset_name: "MSRVTT"
+videos_dir: "datasets/MSRVTT/MSRVTT_Frames"
+benchmark: "cap"
+loss: "triplet"
+grad_acc_steps: 1
+max_num_epochs: 20
+evals_per_epoch: 1
+
+task_num: 10
+# FrameFusionMoE uses the original global-similarity validator path in this branch.
+wf: False

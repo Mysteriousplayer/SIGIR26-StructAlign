@@ -1,0 +1,61 @@
+# Default configuration for Continual Text-to-Video Retrieval
+
+# Evaluation parameters
+eval: false
+eval_path: "outputs_5/debug"
+eval_task_id: null  # specify the task ID for evaluation
+eval_mode: "single" # "single" or "all"
+
+# Data parameters
+path_data: "data/MSRVTT_10_dataset.pkl"
+video_sample_type: "uniform"
+input_res: 224
+
+# Experiment parameters
+api_key: "YOUR API KEY"
+workspace: "YOUR WORKSPACE"
+exp_name: "debug"
+output_dir: "./outputs_vtest"
+evals_per_epoch: 10
+eval_window_size: 5
+metric: "t2v"
+
+training_type: "full_shot"
+num_shots: 16
+init_validation: true
+load_best: true
+benchmark: "anet_cap"
+
+# Model parameters
+huggingface: true
+pre_trained: true
+arch: "avg_pool"
+clip_arch: "ViT-B/32"
+embed_dim: 512
+
+# Training parameters
+weight_decay: 0.5  #0.2 0.5
+warmup_proportion: 0.1  #0.1  0.2  0.5
+
+# Frame pooling parameters
+attention_temperature: 0.01
+num_mha_heads: 1
+transformer_dropout: 0.3
+
+# System parameters
+num_workers: 8
+seed: 42
+
+#########################
+# FFA specific parameters
+adapter_applied_layer: 10 # 10
+
+# TAME specific parameters
+lora_r: 64
+lora_alpha: 256
+lora_nums: 10
+lora_dropout: 0.1
+topk: 2 
+task_prototype: True
+# Cross-Task Loss specific parameters
+loss_scale: 0.6
