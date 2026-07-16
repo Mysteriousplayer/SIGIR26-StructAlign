@@ -15,7 +15,7 @@ Shaokun Wang<sup>1</sup>, Weili Guan<sup>1*</sup>, Jizhou Han<sup>2</sup>, Jianl
 
 ## 🔗 Links
 
-- 📄 **Paper:** [ACM Digital Library](https://...)
+- 📄 **Paper:** [ACM Digital Library](https://dl.acm.org/doi/10.1145/3805712.3809704)
 - 💻 **Code Repository:** [GitHub](https://github.com/Mysteriousplayer/SIGIR26-StructAlign)
 
 ---
