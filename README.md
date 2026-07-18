@@ -224,8 +224,8 @@ author = {Wang, Shaokun and Guan, Weili and Han, Jizhou and Wu, Jianlong and Hu,
 title = {StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrieval},
 year = {2026},
 booktitle = {Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval},
-pages = {},
-numpages = {}
+pages = {1800-1811},
+numpages = {12}
 }
 ```
 
